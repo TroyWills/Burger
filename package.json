@@ -1,0 +1,24 @@
+{
+  "name": "13-node-express-handlebars",
+  "version": "1.0.0",
+  "description": "Node Express Handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TroyWills/Node-Express-Handlebars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TroyWills/Node-Express-Handlebars/issues"
+  },
+  "homepage": "https://github.com/TroyWills/Node-Express-Handlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
