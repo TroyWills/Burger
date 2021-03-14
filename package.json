@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/TroyWills/Burger/issues"
   },
-  "homepage": "https://github.com/TroyWills/Burger#readme"
+  "homepage": "https://github.com/TroyWills/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "mysql": "^2.18.1"
+  }
 }
