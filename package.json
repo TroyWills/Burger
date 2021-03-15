@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "watch": "nodemon app.js",
     "start": "node app.js",
-    "seed": ""
+    "watch": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
+    "glob": "^7.1.6",
+    "graceful-fs": "^4.2.6",
+    "handlebars": "^4.7.7",
     "mysql2": "^2.2.5",
     "sequelize": "^6.5.1"
   }
