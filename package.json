@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-      "watch": "nodemon app.js",
-      "start": "node app.js",
+    "watch": "nodemon app.js",
+    "start": "node app.js",
+    "seed": ""
   },
   "repository": {
     "type": "git",
