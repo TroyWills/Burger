@@ -1,5 +1,5 @@
-    INSERT INTO burgers (name, devoured) VALUES ('Hamburger', 1)
-    INSERT INTO burgers (name, devoured) VALUES ('Cheeseburger', 1)
-    INSERT INTO burgers (name, devoured) VALUES ('Bacon Cheeseburger', 1)
-    INSERT INTO burgers (name, devoured) VALUES ('Mushroom Swiss', 1)
-
+INSERT INTO burger (burger_name, devoured) VALUES 
+('Hamburger', 1),
+('Cheeseburger', 1),
+('Bacon Cheeseburger', 1),
+('Mushroom Swiss', 1);
