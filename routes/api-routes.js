@@ -1,10 +1,22 @@
-var db = require("../models");
-const burger = require("../models/burger");
+var db = require("../models")
+// console.log(db.Burger);
 
-module.exports = function(app) {
+module.exports = function(router) {
+    router.get("/", function(req, res) {
+    db.Burger.findAll({})
+    .then(function(burger) {
+        // console.log(burger);
+    res.render("home", {burger : burger});
+    })
+    .catch(function(err){
+        console.log(err)
+    })
+    ;
+  });
 
-    app.get("/", (req, res) => {
-        res.send('Our express server is up and running');
-    });
-
+  router.post("/",function(req,res){
+    //   console.log(req.body);
+      db.Burger.create(req.body)
+      .then(result => res.json(result))
+  })
 }
