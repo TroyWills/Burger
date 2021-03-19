@@ -6,14 +6,13 @@ var connection = mysql.createConnection({
   // Your port; if not 3306
   port: 3306,
   user: "root",
-  password: "root"
+  password: "root",
   database: "burger"
 });
 
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId + "\n");
-  readColleges();
 });
 
-
+// module.exports = databaseConnection;
