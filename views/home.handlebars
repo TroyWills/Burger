@@ -1,34 +1,36 @@
 
-  <h1>Burger List:</h1>
+  <h1>Burgers:</h1>
 
   <br>
 
-  <div class = container>
-    <h2>Burgers I have devoured:</h2>
-  <input type="email" 
-  class="form-control" 
-  id="exampleInputEmail1" 
-  aria-describedby="emailHelp" 
-  placeholder="Add burgers I have devoured">
+<div class ="devoured">
+<h5>Burgers I have devoured:</h5>
+
+    <input type="email" 
+    class="form-control" 
+    id="exampleInputEmail1" 
+    aria-describedby="emailHelp" 
+    placeholder="Add burgers I have devoured">
+
       {{#each burger}}
       <p>Name: {{dataValues.burger_name}}</p>
       <p>Devoured: {{dataValues.devoured}}</p>
       {{/each}}
-  </div>  
+  
+<br>
 
+    <h5>Burgers i'd like to devour:</h5>
 
-  <br>
-
-  <div class = container>
-    <h2>Burgers i'd like to devour:</h2>
       <input type="email" 
       class="form-control" 
       id="exampleInputEmail1" 
       aria-describedby="emailHelp" 
       placeholder="Add burger i'd like to devour">
-          {{#unless burger}}
-          <p>Name: {{dataValues.burger_name}}</p>
-          <p>Devoured: {{dataValues.devoured}}</p>
-          {{/#unless burger}}
-</div>  
- 
+
+        {{!-- {{#unless burger}}
+        <p>Name: {{dataValues.burger_name}}</p>
+        <p>Devoured: {{dataValues.devoured}}</p>
+        {{/#unless burger}} --}}
+
+</div>
+  
