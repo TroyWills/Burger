@@ -6,7 +6,7 @@ module.exports = function(router) {
     db.Burger.findAll({})
     .then(function(burger) {
         // console.log(burger);
-    res.render("home", {burger : burger});
+     res.render("home", {burger : burger});
     })
     .catch(function(err){
         console.log(err)
@@ -16,6 +16,7 @@ module.exports = function(router) {
 
   router.post("/",function(req,res){
     //   console.log(req.body);
+    
       db.Burger.create(req.body)
       .then(result => res.json(result))
   })
