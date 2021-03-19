@@ -2,7 +2,6 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
 var db = require("./models")
-// var router = express.Router();
 
 // Lets our app run on express 
 var app = express();
@@ -18,10 +17,6 @@ require("./routes/api-routes")(app);
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');   
-
-// app.get("/", (req, res) => {
-//     res.render("home", db.Burger);
-// });
 
 db.sequelize.sync({force: true}).then(function () {
       app.listen(PORT, function () {
