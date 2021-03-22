@@ -1,7 +1,6 @@
-DROP DATABASE IF EXISTS baroverview
-create DATABASE baroverview;
-
-use baroverview;
+DROP DATABASE IF EXISTS burger
+CREATE DATABASE burger;
+USE burger;
 
 CREATE TABLE Burger (
 id INT NOT NULL AUTO_INCREMENT,
