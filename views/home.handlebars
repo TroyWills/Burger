@@ -1,36 +1,47 @@
 
-  <h1>Burgers:</h1>
 
-  <br>
+<div class ="container" id="header">
+  <h1 id="burgerHeader">Burgers:</h1>
+</div>
 
-<div class ="devoured">
-<h5>Burgers I have devoured:</h5>
-
-    <input type="email" 
-    class="form-control" 
-    id="exampleInputEmail1" 
-    aria-describedby="emailHelp" 
-    placeholder="Add burgers I have devoured">
-
-      {{#each burger}}
-      <p>Name: {{dataValues.burger_name}}</p>
-      <p>Devoured: {{dataValues.devoured}}</p>
-      {{/each}}
-  
 <br>
 
-    <h5>Burgers i'd like to devour:</h5>
-
+<div class ="container">
+  <div class ="row">
+    <div class= "col-md-4">
+      <h2 id ="devourForm">Input burger i'd like to devour:</h2>
       <input type="email" 
       class="form-control" 
-      id="exampleInputEmail1" 
+      id="exampleInputEmail1"
       aria-describedby="emailHelp" 
-      placeholder="Add burger i'd like to devour">
-
-        {{!-- {{#unless burger}}
-        <p>Name: {{dataValues.burger_name}}</p>
-        <p>Devoured: {{dataValues.devoured}}</p>
-        {{/#unless burger}} --}}
-
+      placeholder="<insert burger here>">
+    </div>
+  </div>
 </div>
-  
+
+  <br>
+<br>
+
+<div class = "container">
+  <div class ="row">
+    <div class = "burgersDevoured">
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class = "container">
+  <div class = "row">
+
+    <div class = "burgersData col-md-6">
+      <h3 id = "dataHeader">Burgers I'd Like to Devour</h3>
+    </div>
+
+    <div class = "burgersData col-md-6">
+      <h3 id = "dataHeader">Burgers I've Devoured:</h3>
+    </div>
+
+  </div>
+</div>
+
