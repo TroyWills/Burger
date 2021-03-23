@@ -1,0 +1,32 @@
+#header {
+    text-align: center;
+}
+
+#burgerHeader {
+    font-size: 3rem;
+}
+
+#devourForm {
+    font-size: 1rem;
+    width: 300px;
+}
+
+.burgersDevoured {
+    border-top: 1px solid black;
+}
+
+#dataHeader {
+    font-size: 1rem;
+}
+
+.burgersData {
+    border: 1px solid black;
+}
+
+.submitButton {
+    margin-top: 5px;
+    background-color: rgba(211, 211, 211, 0.63);
+    border: 1px solid black;
+    width: 100px;
+}
+

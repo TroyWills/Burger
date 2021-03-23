@@ -1,27 +1,16 @@
 {
-  "name": "13-node-express-handlebars",
+  "name": "burger-app",
   "version": "1.0.0",
-  "description": "Instructions for use (after cloning repo)1\r 1. npm init \r 2. 'npm i express express-handlebars express-session mysql2 sequelize' \r 3. 'npm install --save-dev sequelize-cli'\r 4. 'npm install --save path'\r 5. Install nodemon (if already have globally installed) use: 'npm install --save-dev nodemon'\r 6. Run nodemon then open on localhost and order some drinks!",
-  "main": "app.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.1",
-    "express-session": "^1.17.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "watch": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TroyWills/Burger.git"
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TroyWills/Burger/issues"
-  },
-  "homepage": "https://github.com/TroyWills/Burger#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
 }
