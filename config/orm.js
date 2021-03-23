@@ -1,9 +1,9 @@
-var connection = require("./connection.js");
+// var connection = require("./connection.js");
 
-// selectALL()
+// // selectALL()
 
-// insertOne()
+// // insertOne()
 
-// updateOne()
+// // updateOne()
 
-module.exports = orm;
+// module.exports = orm;

@@ -6,4 +6,6 @@ $(".submitButton").on("click", function () {
   var burger = ($(this).siblings(".form-control").val().trim());
   console.log(burger);
 
+  // Create AJAX call to put burger input into form inside of "Burgers I'd like to Devour column"
+
 });
