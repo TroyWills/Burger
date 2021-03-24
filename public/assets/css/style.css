@@ -54,3 +54,14 @@
 #form-control {
     border: 2px solid black;
 }
+
+.burgerWasDevoured {
+    margin-top: 5px;
+    width: 100px;
+}
+
+#burgerWasDevoured {
+    background-color: white;
+    border: 2px solid black;
+    width: 150px;
+}

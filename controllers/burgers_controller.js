@@ -2,6 +2,7 @@ const express = require("express");
 const burger = require("../models/burger.js");
 const router = express.Router();
 
+// Display all burgers on the page 
 router.get("/", function (req, res) {
     burger.selectAll(function(data){
         var handlebarsObject = {burgers: data};
@@ -9,6 +10,7 @@ router.get("/", function (req, res) {
     })
 });
 
+// Post new burger to database
 router.post("/", function(req, res) {
     burger.insertOne([
       "burger_name",
@@ -19,5 +21,11 @@ router.post("/", function(req, res) {
       res.json({ id: result.insertId });
     });
   });
+
+  router.put("/", function(req, res){
+    burger.updateOne(req.body.burger_id, function(){
+        res.redirect("/");
+    });
+});
 
 module.exports = router;

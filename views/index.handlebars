@@ -1,63 +1,76 @@
-{{!-- Page Header --}}
-<div class="container" id="header">
-  <h1 id="burgerHeader">Burgers:</h1>
-</div>
+<div class= "topPage">
 
-<br>
+  {{!-- Page Header --}}
+  <div class="container" id="header">
+    <h1 id="burgerHeader">Devoured Burgers</h1>
+    <img src="/assets/images/burger.png">
+  </div>
 
-{{!-- Input area for burger to devour and submit button --}}
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <h2 id="devourForm">Input burger i'd like to devour:</h2>
-        <input type="text" class="form-control" placeholder="Insert burger here">
-          <button class="submitButton">Submit</button>
+  <br>
+  <br>
+
+  {{!-- Input area for new burger to devour and submit button --}}
+  <div class="container">
+    <div class="row">
+      <div id="forms">
+        <h2 id="devourForm">Input Burger to Devour:</h2>
+
+        <div class="container col-md-3" id="inputWithButton">
+          <input type="text" class="form-control" id="form-control" placeholder="Insert burger here">
+          <button class="submitButton" id="submitBurger">Add Burger!</button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<br>
+  <br>
 
-{{!-- Adds the line on page --}}
-<div class="container">
-  <div class="row">
-    <div class="burgersDevoured">
+  {{!-- Adds the line on page --}}
+  <div class="container">
+    <div class="row">
+      <div class="burgersDevoured">
+      </div>
     </div>
   </div>
+
+
 </div>
-
 <br>
-
 <div class="container">
   <div class="row">
-{{!-- Burgers I'd Like to Devour section --}}
+    {{!-- Burgers I'd Like to Devour section --}}
     <div class="burgersData col-md-6">
-      <h3 id="dataHeader">Burgers I'd Like to Devour</h3>
+      <h3 id="dataHeader">Burgers to Devour</h3>
       <ul>
         {{#each burgers}}
-          {{#unless this.devoured}}
-            <div>
-              <li>
-                {{this.burger_name}}
-              </li>
-            </div>
-          {{/unless}}
+        {{#unless this.devoured}}
+        <div>
+          <li>
+            {{!-- Adds burger dynamically from Input entered  --}}
+            {{this.burger_name}}   
+            {{!-- Extra spaces between button --}}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            {{!-- Button to devour burger (move to column on the right) --}}
+            <button class="burgerWasDevoured" id="burgerWasDevoured">Devour Burger!</button>
+            </li>
+        </div>
+        {{/unless}}
         {{/each}}
       </ul>
     </div>
 
-{{!-- Burgers I've Devoured section --}}
+    {{!-- Burgers I've Devoured section --}}
     <div class="burgersData col-md-6">
       <h3 id="dataHeader">Burgers I've Devoured:</h3>
       <ul>
         {{#each burgers}}
-          {{#if this.devoured}}
-            <div>
-              <li>
-                {{this.burger_name}}
-              </li>
-            </div>
-          {{/if}}
+        {{#if this.devoured}}
+        <div>
+          <li>
+            {{this.burger_name}}
+          </li>
+        </div>
+        {{/if}}
         {{/each}}
       </ul>
     </div>

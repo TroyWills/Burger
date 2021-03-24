@@ -16,3 +16,16 @@ $(".submitButton").on("click", function () {
       location.reload();
     });
   });
+
+
+// on click event for updating burger to devoured
+$(".burgerWasDevoured").on("click", function () {
+  console.log("made it!!");
+
+  $.ajax({
+    type: "PUT"
+  }).then(
+    function() {
+      location.reload();
+    });
+});
