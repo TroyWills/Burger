@@ -11,6 +11,11 @@ var burger = {
         orm.insertOne("burger", objColVals, condition, function(res) {
             cb(res);
         });
+    },
+    updateOne: function(burgerID, cb) {
+        orm.updateOne("burger", "devoured", 1, burgerID, function(res) {
+            cb(res);
+        });
     }
 }
  // Also inside `burger.js`, create the code that will call 

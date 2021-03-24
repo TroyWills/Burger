@@ -11,6 +11,7 @@ const orm = {
     },
 
     // insertOne() burger into the MYSQL database
+    
     // INSERT INTO burger (burger_name, devoured) VALUES 
     insertOne: function(table, col, val, callBack) {
         var queryString = "INSERT INTO " + table + "(" + col + ") VALUES (?)";
@@ -20,6 +21,7 @@ const orm = {
             callBack(result);
         });
     },
+
     // updateOne() burger from devoured "0" to devoured "1"
     updateOne: function(table, col, val, itemID, callBack) {
         var queryString = "UPDATE " + table + " SET " + col + "=" + val + " WHERE id = " + itemID;

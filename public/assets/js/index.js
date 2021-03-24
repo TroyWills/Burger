@@ -3,7 +3,6 @@ $(".submitButton").on("click", function () {
   
   // variable to capture user input in form 
   var burgerName = {burger_name: ($(this).siblings(".form-control").val().trim())};
-  console.log(burgerName);
 
   // AJAX call to post new burger in "Burger to devour" section
   $.ajax({
@@ -11,19 +10,19 @@ $(".submitButton").on("click", function () {
     data: burgerName
   }).then(
     function() {
-      console.log("added burger to devour!");
       // RELOAD the page to display the new burger added
       location.reload();
     });
   });
 
-
 // on click event for updating burger to devoured
 $(".burgerWasDevoured").on("click", function () {
-  console.log("made it!!");
+
+  var burgerId = {devoured: ($(this).siblings(".burgersData").val().trim())};
 
   $.ajax({
-    type: "PUT"
+    type: "PUT",
+    data: burgerId
   }).then(
     function() {
       location.reload();

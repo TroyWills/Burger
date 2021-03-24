@@ -22,6 +22,7 @@ router.post("/", function(req, res) {
     });
   });
 
+// UPDATE burger from devoured = false(0) to devoured = true(1)
   router.put("/", function(req, res){
     burger.updateOne(req.body.burger_id, function(){
         res.redirect("/");
