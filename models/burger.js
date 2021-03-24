@@ -6,6 +6,11 @@ var burger = {
         orm.selectAll("burger", function(result) {
             cb(result);
         })
+    },
+    insertOne: function(objColVals, condition, cb) {
+        orm.insertOne("burger", objColVals, condition, function(res) {
+            cb(res);
+        });
     }
 }
  // Also inside `burger.js`, create the code that will call 

@@ -5,7 +5,7 @@ USE burger;
 CREATE TABLE burger (
 id INT NOT NULL AUTO_INCREMENT,
 burger_name VARCHAR(255),
-devoured TINYINT,
+devoured TINYINT NOT NULL DEFAULT 0,
 PRIMARY KEY(id)
 )
     
