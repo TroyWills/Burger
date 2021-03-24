@@ -2,11 +2,11 @@ DROP DATABASE IF EXISTS burger
 CREATE DATABASE burger;
 USE burger;
 
-CREATE TABLE Burger (
+CREATE TABLE burger (
 id INT NOT NULL AUTO_INCREMENT,
 burger_name VARCHAR(255),
 devoured TINYINT,
 PRIMARY KEY(id)
 )
     
-SELECT * FROM Burger;
+SELECT * FROM burger;
