@@ -1,26 +1,24 @@
+{{!-- Page Header --}}
 <div class="container" id="header">
   <h1 id="burgerHeader">Burgers:</h1>
 </div>
 
 <br>
 
+{{!-- Input area for burger to devour and submit button --}}
 <div class="container">
   <div class="row">
     <div class="col-md-4">
       <h2 id="devourForm">Input burger i'd like to devour:</h2>
-
-      {{!-- Form to submit burger to devour --}}
-      <input type="text" class="form-control" placeholder="Insert burger here">
-
-      {{!-- Submit button for burger to devour --}}
-      <button class="submitButton">Submit</button>
+        <input type="text" class="form-control" placeholder="Insert burger here">
+          <button class="submitButton">Submit</button>
     </div>
   </div>
 </div>
 
 <br>
 
-
+{{!-- Adds the line on page --}}
 <div class="container">
   <div class="row">
     <div class="burgersDevoured">
@@ -32,27 +30,36 @@
 
 <div class="container">
   <div class="row">
-
+{{!-- Burgers I'd Like to Devour section --}}
     <div class="burgersData col-md-6">
       <h3 id="dataHeader">Burgers I'd Like to Devour</h3>
-    </div>
-
-    <div class="burgersData col-md-6">
-      <h3 id="dataHeader">Burgers I've Devoured:</h3>
-
       <ul>
         {{#each burgers}}
-          {{!-- {{#unless this.devoured}} --}}
+          {{#unless this.devoured}}
             <div>
               <li>
                 {{this.burger_name}}
               </li>
             </div>
-          {{!-- {{/unless}} --}}
+          {{/unless}}
         {{/each}}
       </ul>
-
     </div>
 
+{{!-- Burgers I've Devoured section --}}
+    <div class="burgersData col-md-6">
+      <h3 id="dataHeader">Burgers I've Devoured:</h3>
+      <ul>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div>
+              <li>
+                {{this.burger_name}}
+              </li>
+            </div>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
   </div>
 </div>
