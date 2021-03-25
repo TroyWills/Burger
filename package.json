@@ -2,7 +2,7 @@
   "name": "burger-app",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "watch": "nodemon server.js",
     "start": "node server.js"
