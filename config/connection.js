@@ -12,7 +12,8 @@ const connectionString = process.env.JAWSDB_URL || {
   host: "localhost",
   user: "root",
   password: "root",
-  database: "burger"
+  database: "burger",
+  PORT: "3306"
 }
 
 const connection = mysql.createConnection(connectionString);
