@@ -1,4 +1,4 @@
-<div class= "topPage">
+<div class="topPage">
 
   {{!-- Page Header --}}
   <div class="container" id="header">
@@ -14,10 +14,11 @@
     <div class="row">
       <div id="forms">
         <h2 id="devourForm">Input Burger to Devour:</h2>
-
-        <div class="container col-md-3" id="inputWithButton">
-          <input type="text" class="form-control" id="form-control" placeholder="Insert burger here">
-          <button class="submitButton" id="submitBurger">Add Burger!</button>
+          <div class="container col-md-3" id="inputWithButton">
+            {{!-- Input Form  --}}
+            <input type="text" class="form-control" id="form-control" placeholder="Insert burger here">
+            {{!-- Submit Button --}}
+            <button class="submitButton" id="submitBurger">Add Burger!</button>
         </div>
       </div>
     </div>
@@ -33,9 +34,10 @@
     </div>
   </div>
 
-
 </div>
+
 <br>
+
 <div class="container">
   <div class="row">
     {{!-- Burgers I'd Like to Devour section --}}
@@ -47,13 +49,13 @@
         <div>
           <li>
             <div>{{this.burger_id}}</div>
-            {{!-- Adds burger dynamically from Input entered  --}}
-            {{this.burger_name}}   
+            {{!-- Adds burger dynamically from Input entered --}}
+            {{this.burger_name}}
             {{!-- Extra spaces between button --}}
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {{!-- Button to devour burger (move to column on the right) --}}
             <button class="burgerWasDevoured" id="burgerWasDevoured">Devour Burger!</button>
-            </li>
+          </li>
         </div>
         {{/unless}}
         {{/each}}
