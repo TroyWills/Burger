@@ -9,10 +9,10 @@ var mysql = require("mysql");
 // });
 
 const connectionString = process.env.JAWSDB_URL || {
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "burger",
+  host: "pxukqohrckdfo4ty.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "cxrz336zg2x6nfb2",
+  password: "ofbclzozwxpios27",
+  database: "h3ohs6fl8slkfor5",
   PORT: "3306"
 }
 
